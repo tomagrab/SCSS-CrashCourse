@@ -1,3 +1,25 @@
+/*===========RESETS===========*/
+:root {
+  font-size: 20px/1.2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+body * {
+  margin: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  padding: unset;
+  font-size: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+figure * {
+  display: block;
+}
+
 /*===========VARIABLES===========*/
 /*===========BODY===========*/
 body {
@@ -8,12 +30,18 @@ body {
 }
 
 /*===========HEADER===========*/
+header {
+  padding: 20px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
 header h1 {
   font-family: 'Lobster';
   font-size: 4rem;
   color: #cc6697;
   text-align: center;
-  padding: 10px 0;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 header h1:hover {
@@ -21,19 +49,24 @@ header h1:hover {
 }
 
 /*===========MAIN===========*/
-section.main {
+.main {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1.5in [start] 1fr [end] 1.5in;
       grid-template-columns: 1.5in [start] 1fr [end] 1.5in;
 }
 
-section.main article {
+.main .main__article {
   grid-column: start / end;
 }
 
-section.main article h2 {
+.main .main__article__title {
   text-align: center;
   font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.main .main__article__p {
+  font-size: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
