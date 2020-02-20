@@ -1,3 +1,50 @@
+/*===========VARIABLES===========*/  
+  $primary-color: #272727;
+  $accent-color: #ff652f;
+  $text-color: #fff;
+  $SASS-logo-color: hsl(331,50%,60%);
+  $SASS-logo-light-color: hsl(331,50%,65%);
+  $font-families: (
+    'Lobster',
+    'cursive',
+  );
+  $font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+  );
+
+/*===========BODY===========*/
 body {
-  background-color: blue;
+  background-color: $primary-color;
+  font-weight: map-get($font-weights,  regular);
+  color: $text-color;
+}
+
+/*===========HEADER===========*/
+header h1 {
+  font-family: 'Lobster';
+  font-size: 4rem;
+  color: $SASS-logo-color;
+  text-align: center;
+  padding: 10px 0;
+}
+
+header h1:hover {
+  color: $SASS-logo-light-color;
+}
+
+/*===========MAIN===========*/
+section.main {
+  display: grid;
+  grid-template-columns: 1.5in [start] 1fr [end] 1.5in;
+}
+
+section.main article {
+  grid-column: start / end;
+}
+
+section.main article h2 {
+  text-align: center;
+  font-size: 2.5rem;
 }
