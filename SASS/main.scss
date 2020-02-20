@@ -4,10 +4,6 @@
   $text-color: #fff;
   $SASS-logo-color: hsl(331,50%,60%);
   $SASS-logo-light-color: hsl(331,50%,65%);
-  $font-families: (
-    'Lobster',
-    'cursive',
-  );
   $font-weights: (
     "regular": 400,
     "medium": 500,
@@ -19,6 +15,7 @@ body {
   background-color: $primary-color;
   font-weight: map-get($font-weights,  regular);
   color: $text-color;
+  font-family: 'Montserrat';
 }
 
 /*===========HEADER===========*/
