@@ -1,0 +1,13 @@
+@media (max-width: 750px) {
+  .main {
+    grid-template-columns: .5in [start] 1fr [end] .5in;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    #{&}__article {
+      grid-template-columns: 1fr;
+    }
+  }
+}

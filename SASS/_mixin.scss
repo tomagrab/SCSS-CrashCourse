@@ -1,0 +1,10 @@
+@mixin mainSectionGrid {
+  display: grid;
+  grid-template-columns: 1.5in [start] 1fr [end] 1.5in;
+}
+
+@mixin articleGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
