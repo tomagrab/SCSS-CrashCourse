@@ -3,7 +3,11 @@
   $text-color: #fff;
   $SASS-logo-color: hsl(331,50%,60%);
   $SASS-logo-light-color: hsl(331,50%,65%);
+  $basic-border: 1px solid black;
+
   $font-sizes: (
+    "page-header": 4rem,
+    "article-title": 2.5rem,
     "primary": 1.1rem,
     "header": 3rem,
     "title": 2rem,
@@ -14,4 +18,13 @@
     "medium": 500,
     "bold": 700
   );
+
+  $image-heights: (
+    "small": 300px,
+    "medium": 500px,
+    "large": 700px
+  );
+
   $stroke: 0px 0px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+  $shadow: 0px 0px 5px 1px hsl(0,0%,0%);

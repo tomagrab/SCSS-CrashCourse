@@ -2,6 +2,10 @@
   .main {
     grid-template-columns: .5in [start] 1fr [end] .5in;
   }
+
+  .main__article__image {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 600px) {

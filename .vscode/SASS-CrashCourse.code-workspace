@@ -5,7 +5,7 @@
 		}
 	],
 	"settings": {
-		"window.zoomLevel": 0,
+		"window.zoomLevel": -2,
 		"files.autoSave": "afterDelay",
 		"workbench.iconTheme": "vscode-icons",
 		"workbench.colorTheme": "Visual Studio Dark - C++",

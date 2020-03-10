@@ -1,0 +1,11 @@
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name );
+}
+
+@function font-size($size-name) {
+  @return map-get($font-sizes, $size-name);
+}
+
+@function image-height($height-name) {
+  @return map-get($image-heights, $height-name )
+}
