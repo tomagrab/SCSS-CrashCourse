@@ -17,3 +17,9 @@
     color: darken($text-color, 100%)
   }
 }
+
+@mixin mobile_display {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

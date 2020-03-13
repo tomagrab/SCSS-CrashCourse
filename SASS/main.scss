@@ -44,6 +44,7 @@ div.wrapper {
   padding: 20px;
   background-color: white;
   margin-bottom: 20px;
+  border-bottom: $basic-border;
 
   &__title {
     font-family: 'Lobster';
@@ -63,6 +64,7 @@ div.wrapper {
   @include mainSectionGrid;
   margin-bottom: 20px;
   
+  
   #{&}__article {
     grid-column: start / end;
     // @include articleGrid;
@@ -79,12 +81,19 @@ div.wrapper {
     grid-column: span 1;
     word-break: break-word;
     hyphens: auto;
-    line-height: 25px;
+    line-height: 1.5rem;
+    text-align: justify;
   }
 
   #{&}__article__img {
     max-height: image-height(medium);
     border-radius: 5px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  @include mobile_display {
+    grid-template-columns: $mobile-grid;
   }
 }
 
@@ -105,6 +114,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 4rem;
+  border-top: $basic-border;
 
   p {
     position: relative;
@@ -112,7 +122,3 @@ footer {
     top: 50%;
   }
 }
-
-/*===========MEDIA QUERIES===========*/
-
-@import './mediaQ';

@@ -54,6 +54,7 @@ div.wrapper {
   padding: 20px;
   background-color: white;
   margin-bottom: 20px;
+  border-bottom: 1px solid black;
 }
 
 .header__title {
@@ -94,12 +95,22 @@ div.wrapper {
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
-  line-height: 25px;
+  line-height: 1.5rem;
+  text-align: justify;
 }
 
 .main .main__article__img {
   max-height: 500px;
   border-radius: 5px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+  .main {
+    -ms-grid-columns: 0.5in [start] 1fr [end] 0.5in;
+        grid-template-columns: 0.5in [start] 1fr [end] 0.5in;
+  }
 }
 
 /*===========IMAGE ID's===========*/
@@ -119,6 +130,7 @@ footer {
   bottom: 0;
   width: 100%;
   height: 4rem;
+  border-top: 1px solid black;
 }
 
 footer p {
@@ -126,23 +138,5 @@ footer p {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   top: 50%;
-}
-
-/*===========MEDIA QUERIES===========*/
-@media (max-width: 750px) {
-  .main {
-    -ms-grid-columns: 0.5in [start] 1fr [end] 0.5in;
-        grid-template-columns: 0.5in [start] 1fr [end] 0.5in;
-  }
-  .main__article__image {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 600px) {
-  .main .main__article {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
 }
 /*# sourceMappingURL=main.css.map */
